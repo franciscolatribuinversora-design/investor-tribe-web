@@ -1045,18 +1045,22 @@ La imagen debe ser una URL pública (no funciona con imágenes incrustadas en ba
         </div>
       </div>
 
-      <form class="contact-form reveal" aria-label="Formulario de contacto">
+      <form class="contact-form reveal" name="contacto" method="POST" data-netlify="true" netlify-honeypot="bot-field" action="/gracias" aria-label="Formulario de contacto">
+        <input type="hidden" name="form-name" value="contacto">
+        <p style="display:none;">
+          <label>No rellenar si eres humano: <input name="bot-field"></label>
+        </p>
         <div class="form-row">
           <label for="nombre">Nombre</label>
-          <input id="nombre" type="text" placeholder="Tu nombre" required>
+          <input id="nombre" name="nombre" type="text" placeholder="Tu nombre" required>
         </div>
         <div class="form-row">
           <label for="email">Correo electrónico</label>
-          <input id="email" type="email" placeholder="tu@email.com" required>
+          <input id="email" name="email" type="email" placeholder="tu@email.com" required>
         </div>
         <div class="form-row">
           <label for="mensaje">Cuéntame sobre tu propiedad</label>
-          <textarea id="mensaje" placeholder="Zona, número de habitaciones, qué necesitas..." required></textarea>
+          <textarea id="mensaje" name="mensaje" placeholder="Zona, número de habitaciones, qué necesitas..." required></textarea>
         </div>
         <button type="submit" class="btn-form">Enviar solicitud</button>
       </form>
