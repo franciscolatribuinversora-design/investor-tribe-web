@@ -3,27 +3,27 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Gestión de Habitaciones en Madrid | Francisco Expósito — The Investor Tribe Real Estate</title>
+<title>Gestión de Habitaciones en Madrid | Francisco Expósito — La Tribu Inversora</title>
 <meta name="description" content="Gestión integral de alquiler de habitaciones en Madrid: +200 habitaciones gestionadas, +40 inversores, 0 impagos y 10-15% de rentabilidad neta anual. Servicio llave en mano: búsqueda, reforma, mobiliario y gestión día a día.">
 <meta name="keywords" content="gestión de habitaciones Madrid, alquiler de habitaciones Madrid, inversión inmobiliaria Madrid, gestión de alquiler llave en mano, rent to rent Madrid, gestor de habitaciones, La Tribu Inversora">
 <meta name="robots" content="index, follow">
-<link rel="canonical" href="https://www.theinvestortriberealestate.es/">
+<link rel="canonical" href="https://latribuinversora.es/">
 
 <!-- Open Graph -->
 <meta property="og:type" content="website">
-<meta property="og:title" content="Gestión de Habitaciones en Madrid | The Investor Tribe Real Estate">
+<meta property="og:title" content="Gestión de Habitaciones en Madrid | La Tribu Inversora">
 <meta property="og:description" content="+200 habitaciones gestionadas, +40 inversores, 0 impagos y 10-15% de rentabilidad neta anual. Servicio llave en mano en Madrid.">
-<meta property="og:url" content="https://www.theinvestortriberealestate.es/">
+<meta property="og:url" content="https://latribuinversora.es/">
 <meta property="og:locale" content="es_ES">
-<meta property="og:site_name" content="The Investor Tribe Real Estate">
+<meta property="og:site_name" content="La Tribu Inversora">
 <!-- IMPORTANTE: cuando publiques la web en tu dominio, añade aquí:
-<meta property="og:image" content="https://www.theinvestortriberealestate.es/RUTA-A-UNA-FOTO.jpg">
-<meta name="twitter:image" content="https://www.theinvestortriberealestate.es/RUTA-A-UNA-FOTO.jpg">
+<meta property="og:image" content="https://latribuinversora.es/RUTA-A-UNA-FOTO.jpg">
+<meta name="twitter:image" content="https://latribuinversora.es/RUTA-A-UNA-FOTO.jpg">
 La imagen debe ser una URL pública (no funciona con imágenes incrustadas en base64). -->
 
 <!-- Twitter Card -->
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="Gestión de Habitaciones en Madrid | The Investor Tribe Real Estate">
+<meta name="twitter:title" content="Gestión de Habitaciones en Madrid | La Tribu Inversora">
 <meta name="twitter:description" content="+200 habitaciones gestionadas, +40 inversores, 0 impagos y 10-15% de rentabilidad neta anual.">
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -35,10 +35,10 @@ La imagen debe ser una URL pública (no funciona con imágenes incrustadas en ba
 {
   "@context": "https://schema.org",
   "@type": "RealEstateAgent",
-  "name": "The Investor Tribe Real Estate",
-  "alternateName": "La Tribu Inversora",
+  "name": "La Tribu Inversora",
+  "alternateName": "The Investor Tribe Real Estate",
   "description": "Gestión integral de alquiler de habitaciones en Madrid: búsqueda de propiedad, reforma, mobiliario, selección de inquilinos y gestión día a día.",
-  "url": "https://www.theinvestortriberealestate.es/",
+  "url": "https://latribuinversora.es/",
   "areaServed": {
     "@type": "City",
     "name": "Madrid"
@@ -185,20 +185,38 @@ La imagen debe ser una URL pública (no funciona con imágenes incrustadas en ba
   .menu-toggle span{display:block;width:24px;height:2px;background:var(--carbon);margin:5px 0;}
 
   /* ===== WhatsApp floating button ===== */
+  .whatsapp-wrap{position:fixed;right:22px;bottom:22px;z-index:200;display:flex;flex-direction:column;align-items:flex-end;gap:14px;}
   .whatsapp-float{
-    position:fixed;right:22px;bottom:22px;z-index:200;
-    width:56px;height:56px;border-radius:50%;
+    width:56px;height:56px;border-radius:50%;border:none;cursor:pointer;flex:none;
     background:#25D366;
     display:flex;align-items:center;justify-content:center;
     box-shadow:0 6px 18px rgba(37,211,102,0.45);
     transition:transform .2s ease, box-shadow .2s ease;
   }
   .whatsapp-float:hover{transform:scale(1.08);box-shadow:0 8px 22px rgba(37,211,102,0.55);}
+  .whatsapp-menu{
+    display:flex;flex-direction:column;gap:8px;
+    background:var(--blanco-roto);border:1px solid var(--linea);border-radius:10px;
+    padding:10px;box-shadow:0 12px 32px rgba(43,39,36,0.18);
+    opacity:0;transform:translateY(8px) scale(.97);pointer-events:none;
+    transition:opacity .18s ease, transform .18s ease;
+    min-width:240px;
+  }
+  .whatsapp-menu.open{opacity:1;transform:translateY(0) scale(1);pointer-events:auto;}
+  .whatsapp-option{
+    display:flex;flex-direction:column;gap:2px;text-align:left;
+    padding:10px 12px;border-radius:6px;
+  }
+  .whatsapp-option:hover{background:var(--crema);}
+  .whatsapp-option strong{font-family:'Inter',sans-serif;font-size:0.9rem;color:var(--carbon);}
+  .whatsapp-option span{font-size:0.78rem;color:var(--carbon-suave);}
   @media (max-width:560px){
-    .whatsapp-float{width:50px;height:50px;right:16px;bottom:16px;}
+    .whatsapp-wrap{right:16px;bottom:16px;}
+    .whatsapp-float{width:50px;height:50px;}
+    .whatsapp-menu{min-width:220px;}
   }
   @media (prefers-reduced-motion: reduce){
-    .whatsapp-float{transition:none;}
+    .whatsapp-float, .whatsapp-menu{transition:none;}
   }
 
   /* ===== Hero ===== */
@@ -573,8 +591,8 @@ La imagen debe ser una URL pública (no funciona con imágenes incrustadas en ba
   <div class="nav-wrap">
     <a href="#top" class="logo">
       <img src="img/logo.webp" alt="La Tribu Inversora" class="logo-img">
-      <span>The Investor Tribe
-        <span class="sub">Real Estate · Madrid</span>
+      <span>La Tribu Inversora
+        <span class="sub">Inversión inmobiliaria · Madrid</span>
       </span>
     </a>
     <nav aria-label="Navegación principal">
@@ -640,7 +658,7 @@ La imagen debe ser una URL pública (no funciona con imágenes incrustadas en ba
       <div class="intro-photos reveal">
         <div class="intro-photo-card">
           <div class="photo-wrap">
-            <img src="img/equipo-francisco.webp" alt="Francisco Expósito, gestor de The Investor Tribe Real Estate" loading="lazy">
+            <img src="img/equipo-francisco.webp" alt="Francisco Expósito, gestor de La Tribu Inversora" loading="lazy">
           </div>
           <div class="caption">
             <span class="name">Francisco Expósito</span>
@@ -949,7 +967,7 @@ La imagen debe ser una URL pública (no funciona con imágenes incrustadas en ba
         </div>
         <div class="testimonial-card">
           <div class="quote-mark">"</div>
-          <p class="quote">Estoy muy satisfecho con el servicio de The Investor Tribe Real Estate. Su profesionalismo y compromiso hicieron que mi experiencia de compra de una propiedad fuera excelente.</p>
+          <p class="quote">Estoy muy satisfecho con el servicio de La Tribu Inversora. Su profesionalismo y compromiso hicieron que mi experiencia de compra de una propiedad fuera excelente.</p>
           <div class="testimonial-author">
             <div class="author-avatar">PF</div>
             <div>
@@ -1122,23 +1140,45 @@ La imagen debe ser una URL pública (no funciona con imágenes incrustadas en ba
   <div class="footer-inner">
     <span class="footer-brand">
       <img loading="lazy" src="img/logo.webp" alt="La Tribu Inversora" class="footer-logo-img">
-      © 2025–2026 Francisco Expósito Mora — The Investor Tribe Real Estate
+      © 2025–2026 Francisco Expósito Mora — La Tribu Inversora
     </span>
     <span><a href="mailto:francisco.latribuinversora@gmail.com">francisco.latribuinversora@gmail.com</a></span>
   </div>
 </footer>
 
-<a
-  class="whatsapp-float"
-  href="https://wa.me/34610173986?text=Hola%2C%20quiero%20informaci%C3%B3n%20sobre%20la%20gesti%C3%B3n%20de%20mi%20propiedad"
-  target="_blank"
-  rel="noopener"
-  aria-label="Escríbenos por WhatsApp"
->
-  <svg viewBox="0 0 32 32" width="28" height="28" fill="#fff" aria-hidden="true">
-    <path d="M16.004 3C9.1 3 3.5 8.6 3.5 15.5c0 2.43.68 4.7 1.86 6.64L3 29l7.06-2.32a12.4 12.4 0 0 0 5.94 1.52h.01c6.9 0 12.5-5.6 12.5-12.5S22.9 3 16.004 3Zm0 22.7h-.01a10.16 10.16 0 0 1-5.18-1.42l-.37-.22-3.86 1.27 1.3-3.76-.24-.39a10.13 10.13 0 0 1-1.56-5.4c0-5.62 4.58-10.2 10.22-10.2 2.73 0 5.29 1.06 7.22 3 1.93 1.93 3 4.5 2.99 7.22 0 5.63-4.58 10.9-10.51 10.9Zm5.61-7.65c-.31-.15-1.82-.9-2.1-1-.28-.1-.49-.15-.69.16-.2.3-.79 1-.97 1.2-.18.2-.36.23-.67.08-.31-.16-1.29-.48-2.46-1.53-.91-.81-1.52-1.82-1.7-2.12-.18-.31-.02-.47.13-.63.14-.14.31-.36.46-.54.15-.18.2-.31.31-.51.1-.2.05-.39-.02-.54-.08-.16-.69-1.68-.95-2.3-.25-.6-.5-.52-.69-.53h-.59c-.2 0-.53.08-.81.39-.28.31-1.06 1.04-1.06 2.53s1.09 2.94 1.24 3.14c.15.2 2.14 3.28 5.2 4.6.73.31 1.29.5 1.74.65.73.23 1.4.2 1.92.12.59-.09 1.82-.74 2.08-1.46.26-.71.26-1.32.18-1.46-.07-.13-.28-.21-.59-.36Z"/>
-  </svg>
-</a>
+<div class="whatsapp-wrap">
+  <div class="whatsapp-menu" id="whatsappMenu">
+    <a
+      class="whatsapp-option"
+      href="https://wa.me/34610173986?text=Hola%2C%20quiero%20informaci%C3%B3n%20sobre%20la%20gesti%C3%B3n%20de%20mi%20propiedad"
+      target="_blank"
+      rel="noopener"
+    >
+      <strong>Gestión de tu propiedad</strong>
+      <span>Alquiler, mantenimiento e inquilinos</span>
+    </a>
+    <a
+      class="whatsapp-option"
+      href="https://wa.me/34614225530?text=Hola%2C%20quiero%20informaci%C3%B3n%20sobre%20el%20servicio%20de%20Personal%20Shopper%20inmobiliario"
+      target="_blank"
+      rel="noopener"
+    >
+      <strong>Personal Shopper inmobiliario</strong>
+      <span>Busco propiedad para invertir</span>
+    </a>
+  </div>
+  <button
+    class="whatsapp-float"
+    id="whatsappToggle"
+    aria-label="Escríbenos por WhatsApp"
+    aria-expanded="false"
+    aria-controls="whatsappMenu"
+  >
+    <svg viewBox="0 0 32 32" width="28" height="28" fill="#fff" aria-hidden="true">
+      <path d="M16.004 3C9.1 3 3.5 8.6 3.5 15.5c0 2.43.68 4.7 1.86 6.64L3 29l7.06-2.32a12.4 12.4 0 0 0 5.94 1.52h.01c6.9 0 12.5-5.6 12.5-12.5S22.9 3 16.004 3Zm0 22.7h-.01a10.16 10.16 0 0 1-5.18-1.42l-.37-.22-3.86 1.27 1.3-3.76-.24-.39a10.13 10.13 0 0 1-1.56-5.4c0-5.62 4.58-10.2 10.22-10.2 2.73 0 5.29 1.06 7.22 3 1.93 1.93 3 4.5 2.99 7.22 0 5.63-4.58 10.9-10.51 10.9Zm5.61-7.65c-.31-.15-1.82-.9-2.1-1-.28-.1-.49-.15-.69.16-.2.3-.79 1-.97 1.2-.18.2-.36.23-.67.08-.31-.16-1.29-.48-2.46-1.53-.91-.81-1.52-1.82-1.7-2.12-.18-.31-.02-.47.13-.63.14-.14.31-.36.46-.54.15-.18.2-.31.31-.51.1-.2.05-.39-.02-.54-.08-.16-.69-1.68-.95-2.3-.25-.6-.5-.52-.69-.53h-.59c-.2 0-.53.08-.81.39-.28.31-1.06 1.04-1.06 2.53s1.09 2.94 1.24 3.14c.15.2 2.14 3.28 5.2 4.6.73.31 1.29.5 1.74.65.73.23 1.4.2 1.92.12.59-.09 1.82-.74 2.08-1.46.26-.71.26-1.32.18-1.46-.07-.13-.28-.21-.59-.36Z"/>
+    </svg>
+  </button>
+</div>
 
 <script>
   // Reveal on scroll
@@ -1209,6 +1249,21 @@ La imagen debe ser una URL pública (no funciona con imágenes incrustadas en ba
     navUl.style.border = '1px solid var(--linea)';
     navUl.style.borderRadius = '4px';
     navUl.style.gap = '18px';
+  });
+
+  // WhatsApp menu toggle (choose Gestión vs. Personal Shopper)
+  const waToggle = document.getElementById('whatsappToggle');
+  const waMenu = document.getElementById('whatsappMenu');
+  waToggle.addEventListener('click', () => {
+    const isOpen = waMenu.classList.toggle('open');
+    waToggle.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
+  });
+  document.addEventListener('click', (e) => {
+    if (!waMenu.classList.contains('open')) return;
+    if (e.target === waToggle || waToggle.contains(e.target)) return;
+    if (waMenu.contains(e.target)) return;
+    waMenu.classList.remove('open');
+    waToggle.setAttribute('aria-expanded', 'false');
   });
 </script>
 
