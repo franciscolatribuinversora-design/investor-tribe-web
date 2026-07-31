@@ -122,11 +122,16 @@ La imagen debe ser una URL pública (no funciona con imágenes incrustadas en ba
   *{margin:0;padding:0;box-sizing:border-box;}
   html{scroll-behavior:smooth;}
   body{
-    background:var(--crema);
+    background:var(--crema) url('img/watermark.png') no-repeat center center fixed;
     color:var(--carbon);
     font-family:'Inter',sans-serif;
     line-height:1.6;
     overflow-x:hidden;
+  }
+  @media (max-width:768px){
+    /* background-attachment:fixed es poco fiable en móviles (sobre todo iOS);
+       se ancla cerca de la cabecera para que se vea sin tener que hacer scroll */
+    body{background-attachment:scroll;background-size:280px auto;background-position:center 420px;}
   }
   h1,h2,h3,h4{
     font-family:'Fraunces',serif;
