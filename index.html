@@ -29,10 +29,7 @@ La imagen debe ser una URL pública (no funciona con imágenes incrustadas en ba
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="Gestión de Habitaciones en Madrid | La Tribu Inversora">
 <meta name="twitter:description" content="+200 habitaciones gestionadas, +40 inversores, 0 impagos y 10-15% de rentabilidad neta anual.">
-
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,500;0,9..144,600;0,9..144,700;1,9..144,400&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link href="/fonts/fuentes.css" rel="stylesheet">
 
 <!-- Schema.org: RealEstateAgent -->
 <script type="application/ld+json">
@@ -596,6 +593,12 @@ La imagen debe ser una URL pública (no funciona con imágenes incrustadas en ba
     .timeline-item{grid-template-columns:60px 1fr;}
     .transform-grid{grid-template-columns:1fr;}
   }
+  .aviso-datos{
+    font-size:0.78rem;line-height:1.5;color:var(--carbon-suave,#5C5650);
+    margin:4px 0 18px;
+  }
+  .aviso-datos a{color:var(--terracota,#8C4A2F);}
+  .footer-legal a{text-decoration:underline;}
 </style>
 </head>
 <body>
@@ -1144,6 +1147,13 @@ La imagen debe ser una URL pública (no funciona con imágenes incrustadas en ba
           <label for="mensaje">Cuéntame sobre tu propiedad</label>
           <textarea id="mensaje" name="mensaje" placeholder="Zona, número de habitaciones, qué necesitas..." required></textarea>
         </div>
+        <p class="aviso-datos">
+          Responsable: <strong>Francisco Expósito Mora</strong> (La Tribu Inversora). Usamos tus datos
+          únicamente para responder a tu consulta; no se ceden a terceros ni se usan para publicidad.
+          Puedes ejercer tus derechos de acceso, rectificación, supresión y oposición escribiendo a
+          <a href="mailto:francisco.latribuinversora@gmail.com">francisco.latribuinversora@gmail.com</a>.
+          Más información en la <a href="/privacidad.html">política de privacidad</a>.
+        </p>
         <button type="submit" class="btn-form">Enviar solicitud</button>
       </form>
     </div>
@@ -1158,6 +1168,10 @@ La imagen debe ser una URL pública (no funciona con imágenes incrustadas en ba
       © 2025–2026 Francisco Expósito Mora — La Tribu Inversora
     </span>
     <span><a href="mailto:francisco.latribuinversora@gmail.com">francisco.latribuinversora@gmail.com</a></span>
+    <span class="footer-legal">
+      <a href="/privacidad.html">Política de privacidad</a> ·
+      <a href="/aviso-legal.html">Aviso legal</a>
+    </span>
   </div>
 </footer>
 
