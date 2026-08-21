@@ -3,79 +3,180 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="icon" type="image/png" sizes="32x32" href="/img/favicon-32.png">
+<link rel="icon" type="image/png" sizes="192x192" href="/img/favicon-192.png">
+<link rel="apple-touch-icon" href="/img/apple-touch-icon.png">
 <title>Política de privacidad | La Tribu</title>
-<meta name="robots" content="noindex">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@500;600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link href="/fonts/fuentes.css" rel="stylesheet">
 <style>
   :root{
-    --terracota:#8C4A2F;
-    --carbon:#2B2724;
-    --crema:#F7F2EA;
-    --carbon-suave:#5C5650;
-    --linea:#E3D9C9;
+    --terracota:#8C4A2F; --carbon:#2B2724; --crema:#F7F2EA;
+    --carbon-suave:#5C5650; --linea:#E3D9C9;
   }
   *{margin:0;padding:0;box-sizing:border-box;}
-  body{
-    background:var(--crema);color:var(--carbon);font-family:'Inter',sans-serif;
-    line-height:1.6;
-  }
-  .wrap{max-width:720px;margin:0 auto;padding:56px 24px 96px;}
+  body{background:var(--crema);color:var(--carbon);font-family:'Inter',sans-serif;line-height:1.6;}
+  .wrap{max-width:760px;margin:0 auto;padding:56px 24px 96px;}
   a{color:var(--terracota);}
   h1{font-family:'Fraunces',serif;font-size:2rem;margin-bottom:8px;}
-  .updated{color:var(--carbon-suave);font-size:0.9rem;margin-bottom:40px;}
-  h2{font-family:'Fraunces',serif;font-size:1.25rem;margin-top:40px;margin-bottom:12px;color:var(--terracota);}
-  p, li{color:var(--carbon-suave);font-size:1rem;margin-bottom:12px;}
-  ul{padding-left:20px;margin-bottom:12px;}
-  .back{
-    display:inline-block;margin-top:48px;padding-top:24px;border-top:1px solid var(--linea);
-    color:var(--terracota);text-decoration:none;font-weight:600;
-  }
-  table{width:100%;border-collapse:collapse;margin:12px 0 20px;font-size:0.95rem;}
-  th, td{text-align:left;padding:8px 10px;border-bottom:1px solid var(--linea);color:var(--carbon-suave);}
+  .updated{color:var(--carbon-suave);font-size:0.9rem;margin-bottom:32px;}
+  h2{font-family:'Fraunces',serif;font-size:1.35rem;margin-top:44px;margin-bottom:12px;color:var(--terracota);}
+  h3{font-family:'Fraunces',serif;font-size:1.08rem;margin-top:28px;margin-bottom:10px;}
+  p,li{color:var(--carbon-suave);font-size:1rem;margin-bottom:12px;}
+  ul{padding-left:22px;margin-bottom:12px;}
+  table{width:100%;border-collapse:collapse;margin:12px 0 20px;font-size:0.94rem;}
+  th,td{text-align:left;padding:9px 10px;border-bottom:1px solid var(--linea);color:var(--carbon-suave);vertical-align:top;}
   th{color:var(--carbon);font-weight:600;}
+  .destacado{background:#fff;border:1px solid var(--linea);border-radius:4px;padding:18px 22px;margin:22px 0;}
+  .indice{background:#fff;border:1px solid var(--linea);border-radius:4px;padding:18px 22px;margin:26px 0 8px;}
+  .indice ul{margin:0;padding-left:20px;}
+  .indice li{margin-bottom:5px;font-size:0.95rem;}
+  .back{display:inline-block;margin-top:48px;padding-top:24px;border-top:1px solid var(--linea);
+        color:var(--terracota);text-decoration:none;font-weight:600;}
 </style>
 </head>
 <body>
   <div class="wrap">
     <h1>Política de privacidad</h1>
-    <p class="updated">App "La Tribu" — última actualización: 2 de agosto de 2026</p>
+    <p class="updated">La Tribu Inversora — última actualización: 21 de agosto de 2026</p>
 
-    <p>Esta política explica qué datos recoge la aplicación móvil "La Tribu" (gestión de alquiler de habitaciones), operada por La Tribu Inversora ("nosotros"), y cómo se usan. Al usar la app, aceptas esta política.</p>
+    <p>Esta política explica qué datos personales tratamos, para qué y durante cuánto tiempo. Cubre
+    dos cosas distintas: <strong>esta web</strong> y la <strong>aplicación móvil «La Tribu»</strong>.
+    Cada una recoge datos diferentes, así que se explican por separado.</p>
 
-    <h2>1. Responsable del tratamiento</h2>
-    <p>La Tribu Inversora — Madrid, España. Contacto para cualquier duda sobre tus datos: <a href="mailto:francisco.latribuinversora@gmail.com">francisco.latribuinversora@gmail.com</a></p>
+    <div class="indice">
+      <ul>
+        <li><a href="#responsable">Quién trata tus datos</a></li>
+        <li><a href="#web">A · Si usas esta web</a></li>
+        <li><a href="#app">B · Si usas la aplicación</a></li>
+        <li><a href="#encargados">Proveedores que tratan datos por cuenta nuestra</a></li>
+        <li><a href="#derechos">Tus derechos</a></li>
+      </ul>
+    </div>
 
-    <h2>2. Qué datos recogemos</h2>
-    <p>Dependiendo de tu rol en la app (inquilino, propietario o personal), podemos recoger:</p>
+    <h2 id="responsable">Quién trata tus datos</h2>
+    <table>
+      <tr><th>Responsable</th><td>Francisco Expósito Mora</td></tr>
+      <tr><th>NIF</th><td>54494381-K</td></tr>
+      <tr><th>Nombre comercial</th><td>La Tribu Inversora</td></tr>
+      <tr><th>Domicilio</th><td>Calle Serna 4, portal 4, 4-D — 45300 Ocaña (Toledo), España</td></tr>
+      <tr><th>Correo de contacto</th><td><a href="mailto:francisco.latribuinversora@gmail.com">francisco.latribuinversora@gmail.com</a></td></tr>
+      <tr><th>Actividad</th><td>Gestión y administración de arrendamientos de vivienda</td></tr>
+    </table>
+
+    <!-- ================= WEB ================= -->
+    <h2 id="web">A · Si usas esta web</h2>
+
+    <div class="destacado">
+      <p style="margin:0;">Esta web <strong>no utiliza cookies</strong>, no lleva herramientas de
+      analítica y no elabora perfiles de navegación. Solo tratamos datos si tú decides rellenar el
+      formulario de contacto.</p>
+    </div>
+
+    <h3>El formulario de contacto</h3>
+    <table>
+      <tr><th>Qué datos</th><td>Nombre, correo electrónico y el mensaje que escribas</td></tr>
+      <tr><th>Para qué</th><td>Responder a tu consulta y, si procede, valorar la gestión de tu propiedad</td></tr>
+      <tr><th>Base legal</th><td>Tu solicitud previa — artículo 6.1.b del RGPD (medidas precontractuales a petición del interesado)</td></tr>
+      <tr><th>Cuánto tiempo</th><td>Hasta 1 año desde el último contacto, salvo que la consulta derive en una relación contractual, en cuyo caso se conserva mientras dure esa relación y durante los plazos legales posteriores</td></tr>
+      <tr><th>Es obligatorio</th><td>Sí: sin nombre, correo y mensaje no podemos responderte</td></tr>
+    </table>
+
+    <h3>Dónde se guardan esos mensajes</h3>
+    <p>El formulario está gestionado por <strong>Netlify</strong> (Netlify, Inc., Estados Unidos),
+    que aloja esta web y almacena los envíos del formulario, y nos avisa por correo electrónico
+    de cada mensaje recibido. Esto implica una <strong>transferencia internacional de datos</strong>
+    fuera del Espacio Económico Europeo, amparada en las Cláusulas Contractuales Tipo aprobadas por
+    la Comisión Europea que Netlify incorpora en sus condiciones de tratamiento de datos.</p>
+    <p>Si prefieres no usar el formulario, puedes escribirnos directamente a
+    <a href="mailto:francisco.latribuinversora@gmail.com">francisco.latribuinversora@gmail.com</a>.</p>
+
+    <h3>Tipografías y recursos externos</h3>
+    <p>Todas las tipografías y recursos de esta web se sirven <strong>desde nuestro propio
+    dominio</strong>. No se realizan peticiones a servidores de terceros al cargar la página, por lo
+    que tu dirección IP no se comunica a ningún proveedor externo por el mero hecho de visitarnos.</p>
+
+    <!-- ================= APP ================= -->
+    <h2 id="app">B · Si usas la aplicación «La Tribu»</h2>
+    <p>La app es la herramienta con la que gestionamos el alquiler con nuestros inquilinos,
+    propietarios y personal. Al registrarte se te pide aceptar esta política.</p>
+
+    <h3>Qué datos recogemos</h3>
     <table>
       <tr><th>Dato</th><th>Para qué</th></tr>
-      <tr><td>Nombre, email y teléfono</td><td>Crear tu cuenta y contactarte sobre tu alquiler o propiedad</td></tr>
-      <tr><td>Propiedad y habitación asignada</td><td>Mostrarte la información relevante a tu alquiler o gestión</td></tr>
-      <tr><td>Registros de pago (importe, fecha, estado)</td><td>Confirmar pagos de alquiler entre inquilino y propietario/gestión</td></tr>
-      <tr><td>Fotos y descripciones de incidencias</td><td>Gestionar averías y reparaciones en la propiedad</td></tr>
-      <tr><td>Contratos de alquiler (PDF)</td><td>Que puedas consultarlos y descargarlos desde tu perfil</td></tr>
-      <tr><td>Vídeos y fotos de limpiezas</td><td>Verificación del servicio de limpieza para el personal y gestión</td></tr>
-      <tr><td>Solicitudes de reserva de limpieza a domicilio</td><td>Coordinar el servicio entre inquilino y personal de limpieza</td></tr>
-      <tr><td>Solicitudes de seguro de inquilino</td><td>Tramitar la contratación del seguro que solicites</td></tr>
+      <tr><td>Nombre, correo y teléfono</td><td>Crear tu cuenta y contactarte sobre tu alquiler o propiedad</td></tr>
+      <tr><td>Propiedad y habitación asignada</td><td>Mostrarte solo la información que te corresponde</td></tr>
+      <tr><td>Registros de pago (importe, mes, estado)</td><td>Confirmar los pagos entre inquilino, propietario y gestión</td></tr>
+      <tr><td>Fotos y descripciones de incidencias</td><td>Gestionar averías y reparaciones</td></tr>
+      <tr><td>Contratos de alquiler en PDF</td><td>Que puedas consultarlos y descargarlos desde tu perfil</td></tr>
+      <tr><td>Vídeos y fotos de limpieza</td><td>Acreditar el servicio realizado ante gestión y propietario</td></tr>
+      <tr><td>Reservas de limpieza a domicilio y solicitudes de seguro</td><td>Prestar o tramitar el servicio que pidas</td></tr>
+      <tr><td>Identificador de notificaciones del dispositivo</td><td>Enviarte avisos cuando hay novedades en tu alquiler. No se usa para publicidad ni para seguimiento</td></tr>
     </table>
-    <p>No accedemos a tu ubicación ni a tus contactos. No recogemos datos de pago con tarjeta dentro de la app (los pagos de alquiler se notifican y confirman manualmente, no se procesan cobros).</p>
+    <p>No accedemos a tu ubicación ni a tus contactos, y no se procesan cobros con tarjeta dentro de
+    la app: los pagos de alquiler se notifican y se confirman manualmente.</p>
 
-    <h2>3. Dónde se almacenan los datos</h2>
-    <p>Los datos se almacenan de forma segura en <a href="https://supabase.com" target="_blank" rel="noopener">Supabase</a>, nuestro proveedor de base de datos, autenticación y almacenamiento de archivos, con acceso restringido según tu rol (un inquilino no puede ver los datos de otro, por ejemplo).</p>
+    <h3>Base legal</h3>
+    <ul>
+      <li><strong>Ejecución del contrato</strong> (art. 6.1.b RGPD) para todo lo relativo al arrendamiento: pagos, incidencias, contratos, salidas.</li>
+      <li><strong>Obligación legal</strong> (art. 6.1.c) para conservar la documentación fiscal y de arrendamientos.</li>
+      <li><strong>Consentimiento</strong> (art. 6.1.a) para las notificaciones en el móvil, que puedes desactivar en los ajustes de tu teléfono en cualquier momento.</li>
+    </ul>
 
-    <h2>4. Con quién compartimos datos</h2>
-    <p>No vendemos ni compartimos tus datos con terceros con fines publicitarios. Solo se comparten internamente entre las partes necesarias para la gestión (por ejemplo, un pago que notifica un inquilino lo confirma su propietario o el equipo de gestión), y con Supabase como proveedor técnico de infraestructura.</p>
+    <h3>Dónde se guardan</h3>
+    <p>Los datos de la aplicación se alojan en la infraestructura de <strong>Supabase</strong>, en
+    servidores situados en la <strong>Unión Europea</strong> (región West EU, París). El acuerdo de
+    tratamiento de datos exigido por el artículo 28 del RGPD está incorporado a las condiciones del
+    proveedor.</p>
 
-    <h2>5. Notificaciones</h2>
-    <p>La app puede mostrarte notificaciones locales en tu dispositivo (por ejemplo, recordatorios de pago) que se generan en tu propio teléfono a partir de tus datos ya almacenados, sin depender de servidores externos de notificaciones push.</p>
+    <h3>Quién puede ver qué</h3>
+    <p>El acceso está restringido según tu papel: un inquilino solo ve sus propios datos; un
+    propietario, los de las viviendas de las que es titular; y el equipo de gestión, lo necesario
+    para administrar. Estas restricciones están aplicadas en la propia base de datos, no solo en la
+    aplicación.</p>
 
-    <h2>6. Tus derechos</h2>
-    <p>Puedes solicitar en cualquier momento el acceso, la rectificación o la eliminación de tus datos escribiendo a <a href="mailto:francisco.latribuinversora@gmail.com">francisco.latribuinversora@gmail.com</a>. Conservamos los datos mientras mantengas una cuenta activa o mientras sea necesario para la relación contractual de alquiler o gestión.</p>
+    <h3>Cuánto tiempo conservamos los datos</h3>
+    <table>
+      <tr><th>Dato</th><th>Plazo</th></tr>
+      <tr><td>Cuenta, nombre, correo, teléfono</td><td>Mientras mantengas la cuenta activa</td></tr>
+      <tr><td>Incidencias y sus fotos</td><td>Se eliminan al darte de baja</td></tr>
+      <tr><td>Historial de pagos y salidas</td><td>Se conservan <strong>anonimizados</strong>, sin vínculo contigo, por los plazos que exigen la normativa fiscal y de arrendamientos</td></tr>
+      <tr><td>Contrato de alquiler</td><td>Durante la relación contractual y los plazos legales posteriores</td></tr>
+    </table>
 
-    <h2>7. Cambios en esta política</h2>
-    <p>Si actualizamos esta política, publicaremos la nueva versión en esta misma página con la fecha de actualización correspondiente.</p>
+    <h3>Cómo eliminar tu cuenta</h3>
+    <p>Desde la propia aplicación, en <strong>Perfil → Eliminar mi cuenta</strong>. También puedes
+    solicitarlo por correo siguiendo las instrucciones de la
+    <a href="/eliminar-cuenta.html">página de eliminación de cuenta</a>.</p>
+
+    <!-- ================= ENCARGADOS ================= -->
+    <h2 id="encargados">Proveedores que tratan datos por cuenta nuestra</h2>
+    <p>No vendemos tus datos ni los cedemos con fines publicitarios. Los siguientes proveedores los
+    tratan únicamente para prestarnos su servicio, bajo contrato de encargado de tratamiento
+    (artículo 28 del RGPD):</p>
+    <table>
+      <tr><th>Proveedor</th><th>Para qué</th><th>Transferencia internacional</th></tr>
+      <tr><td>Supabase, Inc.</td><td>Base de datos, autenticación y almacenamiento de archivos de la app</td><td><strong>No.</strong> Los datos se alojan en servidores situados en la Unión Europea (región West EU, París)</td></tr>
+      <tr><td>Netlify, Inc.</td><td>Alojamiento de esta web y envíos del formulario de contacto</td><td>Sí, con Cláusulas Contractuales Tipo</td></tr>
+      <tr><td>Expo (650 Industries, Inc.)</td><td>Envío técnico de las notificaciones al dispositivo</td><td>Sí, con Cláusulas Contractuales Tipo</td></tr>
+      <tr><td>Apple y Google</td><td>Distribución de la app y entrega de notificaciones</td><td>Sí, con Cláusulas Contractuales Tipo</td></tr>
+    </table>
+
+    <!-- ================= DERECHOS ================= -->
+    <h2 id="derechos">Tus derechos</h2>
+    <p>Puedes ejercer en cualquier momento tus derechos de <strong>acceso, rectificación, supresión,
+    limitación, oposición y portabilidad</strong>, así como retirar el consentimiento cuando el
+    tratamiento se base en él. Basta con escribir a
+    <a href="mailto:francisco.latribuinversora@gmail.com">francisco.latribuinversora@gmail.com</a>
+    indicando qué derecho quieres ejercer. Responderemos en el plazo máximo de un mes.</p>
+    <p>Si consideras que no hemos atendido correctamente tu solicitud, puedes presentar una
+    reclamación ante la <strong>Agencia Española de Protección de Datos</strong>
+    (<a href="https://www.aepd.es" target="_blank" rel="noopener">aepd.es</a>).</p>
+
+    <h2>Cambios en esta política</h2>
+    <p>Si la actualizamos, publicaremos la nueva versión en esta misma página con su fecha. Si el
+    cambio es sustancial y afecta a usuarios de la app, se avisará dentro de la aplicación.</p>
+
+    <p>Consulta también el <a href="/aviso-legal.html">aviso legal</a>.</p>
 
     <a class="back" href="/">← Volver a la web</a>
   </div>
